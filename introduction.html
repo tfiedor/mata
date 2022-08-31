@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction &#8212; mata 1.1.0 documentation</title>
+    <title>Introduction &#8212; mata 1.1.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -38,10 +38,11 @@
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h1>
 <section id="mata-the-automata-library">
 <h2>Mata: The Automata Library<a class="headerlink" href="#mata-the-automata-library" title="Permalink to this heading">¶</a></h2>
-<p><a class="reference external" href="https://github.com/VeriFIT/toris/actions/workflows/ubuntu.yml"><img alt="master: Ubuntu (build-&amp;-test)" src="https://github.com/VeriFIT/toris/actions/workflows/ubuntu.yml/badge.svg" /></a>
-<a class="reference external" href="https://github.com/VeriFIT/toris/actions/workflows/macos.yml"><img alt="master: MacOS (build-&amp;-test)" src="https://github.com/VeriFIT/toris/actions/workflows/macos.yml/badge.svg" /></a></p>
-<p><a class="reference external" href="https://github.com/VeriFIT/toris/actions/workflows/ubuntu.yml"><img alt="devel: Ubuntu (build-&amp;-test)" src="https://github.com/VeriFIT/toris/actions/workflows/ubuntu.yml/badge.svg?branch=devel" /></a>
-<a class="reference external" href="https://github.com/VeriFIT/toris/actions/workflows/macos.yml"><img alt="devel: MacOS (build-&amp;-test)" src="https://github.com/VeriFIT/toris/actions/workflows/macos.yml/badge.svg?branch=devel" /></a></p>
+<p><a class="reference external" href="https://github.com/VeriFIT/mata"><img alt="GitHub tag" src="https://img.shields.io/github/tag/VeriFIT/mata.svg" /></a></p>
+<p><a class="reference external" href="https://github.com/VeriFIT/mata/actions/workflows/ubuntu.yml"><img alt="master: Ubuntu (build-&amp;-test)" src="https://github.com/VeriFIT/mata/actions/workflows/ubuntu.yml/badge.svg" /></a>
+<a class="reference external" href="https://github.com/VeriFIT/mata/actions/workflows/macos.yml"><img alt="master: MacOS (build-&amp;-test)" src="https://github.com/VeriFIT/mata/actions/workflows/macos.yml/badge.svg" /></a></p>
+<p><a class="reference external" href="https://github.com/VeriFIT/mata/actions/workflows/ubuntu.yml"><img alt="devel: Ubuntu (build-&amp;-test)" src="https://github.com/VeriFIT/mata/actions/workflows/ubuntu.yml/badge.svg?branch=devel" /></a>
+<a class="reference external" href="https://github.com/VeriFIT/mata/actions/workflows/macos.yml"><img alt="devel: MacOS (build-&amp;-test)" src="https://github.com/VeriFIT/mata/actions/workflows/macos.yml/badge.svg?branch=devel" /></a></p>
 <p>Mata is an open source automata library that offers interface for different kinds of automata (NFA,
 AFA, etc.). Currently, Mata offers two interfaces:</p>
 <ol class="arabic simple">
@@ -238,6 +239,16 @@ either contact us directly through mail or
 <a class="reference external" href="https://github.com/VeriFIT/mata/issues/new/choose">create a new issue</a>.
 When creating a new issue, please, try to include everything necessary for us to know
 (such as the version, operation system, etc.) so we can sucessfully replicate the issue.</p>
+<section id="note-to-main-contributors">
+<h3>Note to main contributors<a class="headerlink" href="#note-to-main-contributors" title="Permalink to this heading">¶</a></h3>
+<p>By default, each merge automatically increases the <code class="docutils literal notranslate"><span class="pre">minor</span></code> version of the library
+(i.e., <code class="docutils literal notranslate"><span class="pre">0.0.0</span> <span class="pre">-&gt;</span> <span class="pre">0.1.0</span></code> ). This can be overruled using either tag <code class="docutils literal notranslate"><span class="pre">#patch</span></code> (increasing
+patch version, i.e., <code class="docutils literal notranslate"><span class="pre">0.0.0</span> <span class="pre">-&gt;</span> <span class="pre">0.0.1</span></code>) or <code class="docutils literal notranslate"><span class="pre">#major</span></code> (increasing major version, i.e.,
+<code class="docutils literal notranslate"><span class="pre">0.0.0</span> <span class="pre">-&gt;</span> <span class="pre">1.0.0</span></code>). This tag is specified in the merge message.</p>
+<p>Generally, it is recommended to use <code class="docutils literal notranslate"><span class="pre">#major</span></code> for changes that introduces backward-incompatible
+changes for people that used previous versions, and <code class="docutils literal notranslate"><span class="pre">#patch</span></code> for minor changes, such as bug-fixes,
+performance fixes or refactoring.</p>
+</section>
 </section>
 <section id="links">
 <h2>Links<a class="headerlink" href="#links" title="Permalink to this heading">¶</a></h2>
